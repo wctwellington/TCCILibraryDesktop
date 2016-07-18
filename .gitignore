@@ -1,7 +1,8 @@
 .gitignore
-.project
 .directory
+.classpath
 *.class
 *.jar
+.settings
 /bin
 /libs
