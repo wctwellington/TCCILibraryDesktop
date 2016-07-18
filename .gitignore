@@ -1,3 +1,7 @@
 .gitignore
 .project
 .directory
+*.class
+*.jar
+/bin
+/libs
