@@ -49,9 +49,10 @@ public class Interface_Login extends JFrame {
 		setSize(600, 400);
 		setVisible(true);
 		setResizable(false);
-		getContentPane().setLayout(null);
+		setLayout(null);
 		setLocationRelativeTo(null);
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		
 		
 		icone = new ImageIcon("images/logotitulo.png");
 		setIconImage(icone.getImage());
@@ -65,6 +66,8 @@ public class Interface_Login extends JFrame {
 			     g.drawImage(image, 0, 0,getWidth(), getHeight(), this);
 			}
 		};
+		
+		setContentPane(contentPane);
 		
 		contentPane.setLayout(null);
 		contentPane.add(lblRegistro);
@@ -96,7 +99,7 @@ public class Interface_Login extends JFrame {
 		lblLogin.setHorizontalAlignment(SwingConstants.CENTER);
 		lblLogin.setBounds(26, 25, 534, 41);
 		
-		setContentPane(contentPane);
+		
 		
 		btentrar.addActionListener(new ActionListener() {
 			@SuppressWarnings("deprecation")
